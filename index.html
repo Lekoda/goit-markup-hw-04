@@ -32,13 +32,15 @@
         <li>
           <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
         </li>
-        <li><a class="link phone" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <li>
+          <a class="link phone" href="tel:+380961111111">+38 096 111 11 11</a>
+        </li>
       </ul>
     </div>
   </header>
   <main>
     <!-- # HERO SECTION  -->
-    <section class="hero">
+    <section class="hero hero-overlay">
       <div class="container">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
         <button class="hero-button" type="button">Замовити послугу</button>
@@ -50,27 +52,27 @@
         <h2 class="hide">Переваги</h2>
         <!-- скритий заголовок -->
         <ul class="advantages-list">
-          <li>
+          <li class="advantages-item icon-antenna">
             <h3 class="advantages-subtitle">Увага до деталей</h3>
             <p class="text">
               Ідейні міркування, і навіть початок повсякденної роботи з
               формування позиції.
             </p>
           </li>
-          <li>
+          <li class="advantages-item icon-clock">
             <h3 class="advantages-subtitle">Пунктуальність</h3>
             <p class="text">
               Завдання організації, особливо рамки і місце навчання кадрів тягне
               у себе.
             </p>
           </li>
-          <li>
+          <li class="advantages-item icon-diagram">
             <h3 class="advantages-subtitle">Планування</h3>
             <p class="text">
               Так само консультація з широким активом значною мірою зумовлює.
             </p>
           </li>
-          <li>
+          <li class="advantages-item icon-astronaut">
             <h3 class="advantages-subtitle">Сучасні технології</h3>
             <p class="text">
               Значимість цих проблем настільки очевидна, що реалізація планових
@@ -107,31 +109,72 @@
             <div class="team-info">
               <b class="team-name">Ігор Дем'яненко</b>
               <p class="team-position">Product Designer</p>
-            </div>
-          </li>
-          <li class="team-item">
-            <img class="team-img" src="./images/img-2.jpg" alt="Ольга Рєпіна" width="270" height="260" />
-            <div class="team-info">
-              <b class="team-name">Ольга Рєпіна</b>
-              <p class="team-position">Frontend Developer</p>
-            </div>
-          </li>
-          <li class="team-item">
-            <img class="team-img" src="./images/img-3.jpg" alt="Микола Тарасов" width="270" height="260" />
-            <div class="team-info">
-              <b class="team-name">Микола Тарасов</b>
-              <p class="team-position">Marketing</p>
-            </div>
-          </li>
-          <li class="team-item">
-            <img class="team-img" src="./images/img-4.jpg" alt="Михайло Єрмаков" width="270" height="260" />
-            <div class="team-info">
-              <b class="team-name">Михайло Єрмаков</b>
-              <p class="team-position">UI Designer</p>
-            </div>
+              <!-- social links  -->
+              <ul class="team-social-list">
+                <li class="team-social-item">
+                  <a class="team-social-link" href="#" target="_blank" rel="noopener noreferrer">
+                    <svg class="team-social-icon">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="team-social-item">
+                  <a class="team-social-link" href="#" target="_blank" rel="noopener noreferrer">
+                    <svg class="team-social-icon">
+                      <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg></a>
+                </li>
+                <li class="team-social-item">
+                  <a class="team-social-link" href="#" target="_blank" rel="noopener noreferrer">
+                    <svg class="team-social-icon">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg></a>
+                </li>
+                <li class="team-social-item">
+                  <a class="team-social-link" href="#" target="_blank" rel="noopener noreferrer">
+                    <svg class="team-social-icon">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg></a>
+                </li>
           </li>
         </ul>
+        <li class="team-item">
+          <img class="team-img" src="./images/img-2.jpg" alt="Ольга Рєпіна" width="270" height="260" />
+          <div class="team-info">
+            <b class="team-name">Ольга Рєпіна</b>
+            <p class="team-position">Frontend Developer</p>
+          </div>
+        </li>
+        <li class="team-item">
+          <img class="team-img" src="./images/img-3.jpg" alt="Микола Тарасов" width="270" height="260" />
+          <div class="team-info">
+            <b class="team-name">Микола Тарасов</b>
+            <p class="team-position">Marketing</p>
+          </div>
+        </li>
+        <li class="team-item">
+          <img class="team-img" src="./images/img-4.jpg" alt="Михайло Єрмаков" width="270" height="260" />
+          <div class="team-info">
+            <b class="team-name">Михайло Єрмаков</b>
+            <p class="team-position">UI Designer</p>
+          </div>
+        </li>
+        </ul>
       </div class="container">
+    </section>
+    <section class="clients">
+      <div class="container">
+        <h2 class="title">Постійні клієнти</h2>
+        <ul class="clients-list">
+          <li><a href="" target="_blank" rel="noopener noreferrer"></a></li>
+          <li><a href="" target="_blank" rel="noopener noreferrer"></a></li>
+          <li><a href="" target="_blank" rel="noopener noreferrer"></a></li>
+          <li><a href="" target="_blank" rel="noopener noreferrer"></a></li>
+          <li><a href="" target="_blank" rel="noopener noreferrer"></a></li>
+          <li><a href="" target="_blank" rel="noopener noreferrer"></a></li>
+        </ul>
+
+      </div>
     </section>
   </main>
   <footer>
