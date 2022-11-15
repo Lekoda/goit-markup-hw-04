@@ -301,8 +301,8 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-}
 
+}
 .team-social-link:hover,
 .team-social-link:focus {
   background-color: var(--accent);
