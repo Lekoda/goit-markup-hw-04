@@ -13,6 +13,9 @@
   --text-white-color: #ffffff;
   --text-white-opacity: rgba(255, 255, 255, 0.6);
   --elemnt-color: #AFB1B8;
+  --elemnt-color-secondary: rgba(255, 255, 255, 0.1);
+  --elemnt-white-color: #ffffff;
+  --elemnt-grey-color: #757575;
 }
 body {
   background-color: var(--primary-bcg-color);
@@ -42,7 +45,7 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 /* LOGO  */
 .logo {
@@ -97,6 +100,15 @@ img {
 .site-nav .link.current {
   color: var(--accent);
 }
+.contacts-link {
+  display: flex;
+  align-items: center;
+  color: (--elemnt-grey-color);
+}
+.mail-icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
 .contacts .link {
   color: var(--text-lightgrey-color);
 }
@@ -105,6 +117,7 @@ img {
 .contacts .link:active {
   color: var(--accent);
 }
+
 .phone {
   margin-left: 50px;
 }
@@ -281,7 +294,6 @@ img {
   letter-spacing: 0.03em;
   color: var(--text-lightgrey-color);
 }
-.team-social {}
 
 .team-social-list {
   display: flex;
@@ -302,6 +314,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: var(--elemnt-color);
 
 }
 .team-social-link:hover,
@@ -311,13 +324,13 @@ img {
 }
 .team-social-link:hover .team-social-icon,
 .team-social-link:focus .team-social-icon {
-  fill: var(--text-white-color);
+  fill: var(--elemnt-white-color);
 }
 
 .team-social-icon {
   width: 20px;
   height: 20px;
-  fill: var(--elemnt-color);
+  fill: currentColor;
 }
 
 
@@ -342,6 +355,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: var(--elemnt-color);
 }
 .clients-item:hover,
 .clients-item:focus {
@@ -354,7 +368,7 @@ img {
 .clients-icon {
   width: 106px;
   height: 60px;
-  fill: var(--elemnt-color)
+  fill: currentColor;
 }
 /* FOOTER  */
 footer a {
@@ -364,6 +378,11 @@ footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--accent-bcg-color);
+}
+.footer-wrap {
+  display: flex;
+  align-items: baseline;
+  gap: 93px;
 }
 footer .logo {
   display: block;
@@ -392,6 +411,47 @@ address a:hover,
 address a:focus,
 address a:active {
   color: var(--accent);
+}
+/* Social media in footer  */
+.footer-subtitle {
+  margin-bottom: 20px;
+
+  font-style: Bold; 
+  font-size: 14px; 
+  line-height: 1,1428; 
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--text-white-color);
+}
+
+.footer-socials-list {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-socials-item {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--elemnt-color-secondary);
+}
+.footer-socials-item:hover,
+.footer-socials-item:focus {
+  background-color: var(--accent);
+}
+.footer-socials-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-socials-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--elemnt-white-color);
 }
 
 /* PORTFOLIO PAGE  */
@@ -441,6 +501,14 @@ address a:active {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+}
+.portfolio-link {
+  display: block;
+  text-decoration: none;
+}
+.portfolio-link:hover,
+.portfolio-link:focus {
+  box-shadow: 6px 1px 4px rgba(0, 0, 0, 0.16), 4px 0px 4px rgba(0, 0, 0, 0.06), 1px 0px 1px rgba(0, 0, 0, 0.12);
 }
 .portfolio-item {
   max-width: 370px;
