@@ -210,22 +210,22 @@ img {
   background-color: var(--secondary-bcg-color);
 }
 .icon-antenna::before {
-  background-image: url(../images/antenna\ 1.svg);
+  background-image: url(../images/antenna.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 .icon-clock::before {
-  background-image: url(../images/clock\ 1.svg);
+  background-image: url(../images/clock.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 .icon-diagram::before {
-  background-image: url(../images/diagram\ 1.svg);
+  background-image: url(../images/diagram.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 .icon-astronaut::before {
-  background-image: url(../images/astronaut\ 1.svg);
+  background-image: url(../images/astronaut.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
