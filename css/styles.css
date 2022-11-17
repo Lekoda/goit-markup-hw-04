@@ -360,11 +360,8 @@ img {
 .clients-link:hover,
 .clients-link:focus {
   border: 1px solid var(--accent);
-  fill: var(--accent);
+  color: var(--accent);
 }
-/* .clients-link:hover .clients-icon {
-  fill:var(--accent);
-} */
 
 .clients-icon {
   width: 106px;
@@ -433,13 +430,8 @@ address a:active {
 .footer-socials-item {
   width: 44px;
   height: 44px;
-  /* border-radius: 50%;
-  background-color: var(--elemnt-color-secondary); */
 }
-/* .footer-socials-item:hover,
-.footer-socials-item:focus {
-  background-color: var(--accent);
-} */
+
 .footer-socials-link {
   display: block;
   width: 100%;
@@ -450,7 +442,10 @@ address a:active {
   border-radius: 50%;
   background-color: var(--elemnt-color-secondary);
 }
-
+.footer-socials-link:hover,
+.footer-socials-link:focus {
+  background-color: var(--accent);
+}
 
 .footer-socials-icon {
   width: 20px;
